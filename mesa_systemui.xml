@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Category">
+        <PreferenceScreen android:title="StatusBar">
+            <PreferenceCategory android:title="Battery">
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Stock Battery" android:key="mesa_stockbatt" android:defaultValue="false" android:summaryOn="(Enabled) Enables Stock Battery" android:summaryOff="(Disabled) Enables Stock Battery" />
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="3Minit Battery" android:key="mesa_3mbatt" android:defaultValue="true" android:summaryOn="(Enabled) Enables 3minit Battery" android:summaryOff="(Disabled) Enables 3minit Battery" />
+                <com.wubydax.romcontrol.v2.prefs.OpenAppPreference android:summary="Open 3MinitSettings" android:dependency="mesa_3mbatt" app:componentName="com.three.minit.minitbatterysettings.free/com.three.minit.minitbatterysettings.MainActivity" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Virtual Buttons (set one button on position)">
+                <PreferenceScreen android:title="Lock Button">
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornerlock" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornerlock" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Center" android:key="cocoyaya_centerlock" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                </PreferenceScreen>
+                <PreferenceScreen android:title="Home Button">
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornerhome" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornerhome" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Center" android:key="cocoyaya_centerhome" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                </PreferenceScreen>
+                <PreferenceScreen android:title="Recent Button">
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornertask" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornertask" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Center" android:key="cocoyaya_centertask" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+                </PreferenceScreen>
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Lockscreen">
+            <PreferenceCategory android:title="Clock">
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Hours Text Color" android:key="kg_clock_hours_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Minutes Text Color" android:key="kg_clock_minutes_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Seconds Text Color" android:key="kg_clock_second_color" android:summary="Choose a color" android:dependency="lock_seconds" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Date Text Color" android:key="kg_date_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Lockscreen Owner Info Color" android:key="lockscreen_owner_text_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Next Alarm Text Color" android:key="mesa_kgalarmc" android:summary="Choose a color" android:dependency="mesa_kgalarmsw" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Show Seconds in Clock" android:key="lock_seconds" android:defaultValue="true" android:summaryOn="(Enabled) Shows Seconds in Lockscreen Clock" android:summaryOff="(Disabled) Shows Seconds in Lockscreen Clock" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+            </PreferenceCategory>
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Next Alarm Preview" android:key="mesa_kgalarmsw" android:defaultValue="true" android:summaryOn="(Enabled) Enables Next Alarm Preview" android:summaryOff="(Disabled) Enables Next Alarm Preview" />
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Lockscreen Rotation" android:key="mesa_lsrotate" android:defaultValue="true" android:summaryOn="(Enabled) Enables Lockscreen rotation" android:summaryOff="(Disabled) Enables Lockscreen rotation" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Quick Panel">
+            <PreferenceCategory android:title="Quick Panel Colors">
+                <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Enable Color Customize" android:key="mesa_qsct" android:defaultValue="false" android:summaryOn="(Enabled) Enables Customized Color in QP" android:summaryOff="(Disabled) Enables Customized Color in QP" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="QP Header Expanded Background" android:key="mesa_qscheader" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffe6eaed" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Data usage view Bg Color" android:key="mesa_qscdataus" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffe6eaed" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="S Finder Bar Color" android:key="mesa_qscsfin" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffebebeb" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="S Finder Bg Color" android:key="mesa_qscsfbg" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffe6eaed" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Quick Settings Bg Color" android:key="mesa_qscqs" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffe6eaed" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness Slider Bg Color" android:key="mesa_qscslider" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffe6eaed" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Under Notification Bg Color" android:key="mesa_qscunbg" android:summary="Choose a color" android:dependency="mesa_qsct" android:defaultValue="\#ffe6eaed" alphaSlider="true" hexValue="true" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Networkspeed">
+            <PreferenceCategory android:title="Networkspeed">
+                <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Internet" android:key="tweaks_speed_view" android:summaryOn="Show" android:summaryOff="Hide" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Networkspeed">
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Download speed color" android:key="tweaks_speed_color_download" android:summary="Choose download speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+                <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Upload speed color" android:key="tweaks_speed_color_upload" android:summary="Choose upload speed color" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Custom Carrier ">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Text Visibility" android:key="visibility_lebel_zidni" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference android:title="Select your text" android:key="set_label_zidni" android:summary="%" android:dependency="visibility_lebel_zidni" android:dialogTitle="Select your custom text" />
+            <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference android:title="Text Size Scale Factor" android:key="label_size_zidni" android:dependency="visibility_lebel_zidni" android:defaultValue="14" app:minValue="0" app:maxValue="25" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/font_style_entry" android:title="Font Style" android:key="zidni_style_lebel" android:dependency="visibility_lebel_zidni" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Colors" android:key="color_label_zidni" android:dependency="visibility_lebel_zidni" android:defaultValue="\#ffffff" alphaSlider="true" hexValue="true" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="AOKP Ram Bar">
+		    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Show RAM Bar" android:key="aokp_rambar" android:defaultValue="0" android:summaryOn="RAM bar is shown in recent apps" android:summaryOff="RAM bar is shown in recent apps" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Free RAM color" android:key="free_ram_color" android:defaultValue="\#ffffffff" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Used RAM color" android:key="used_ram_color" android:defaultValue="\#ffffffff" />
+        </PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>
