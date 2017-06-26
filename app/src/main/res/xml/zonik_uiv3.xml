@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Text Visibility" android:key="visibility_lebel_zidni" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference android:title="Select your text" android:key="set_label_zidni" android:summary="%" android:dependency="visibility_lebel_zidni" android:dialogTitle="Select your custom text" />
+    <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference android:title="Text Size Scale Factor" android:key="label_size_zidni" android:dependency="visibility_lebel_zidni" android:defaultValue="14" app:minValue="0" app:maxValue="25" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/font_style_entry" android:title="Font Style" android:key="zidni_style_lebel" android:dependency="visibility_lebel_zidni" android:defaultValue="0" android:entryValues="@array/font_style_values" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Colors" android:key="color_label_zidni" android:dependency="visibility_lebel_zidni" android:defaultValue="\#ffffff" alphaSlider="true" hexValue="true" />
+</PreferenceScreen>

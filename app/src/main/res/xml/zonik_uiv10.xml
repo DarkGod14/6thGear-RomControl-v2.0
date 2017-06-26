@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Hours Text Color" android:key="kg_clock_hours_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Minutes Text Color" android:key="kg_clock_minutes_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clock Date Text Color" android:key="kg_date_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="true" hexValue="true" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Lockscreen Owner Info Color" android:key="lockscreen_owner_text_color" android:summary="Choose a color" android:defaultValue="\#fffafafa" alphaSlider="true" hexValue="true" />
+</PreferenceScreen>

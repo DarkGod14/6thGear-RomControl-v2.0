@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Multi-user Avatar" android:key="multiuser_avatar" android:defaultValue="false" android:summaryOn="Multi-user Avatar shown" android:summaryOff="Multi-user Avatar hidden" app:packageNameToKill="com.android.systemui" app:isSilent="false" /> />
+</PreferenceScreen>

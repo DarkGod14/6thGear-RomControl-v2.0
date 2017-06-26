@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Show RAM Bar" android:key="aokp_rambar" android:defaultValue="0" android:summaryOn="RAM bar is shown in recent apps" android:summaryOff="RAM bar is shown in recent apps" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Free RAM color" android:key="free_ram_color" android:defaultValue="\#ffffffff" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Used RAM color" android:key="used_ram_color" android:defaultValue="\#ffffffff" />
+</PreferenceScreen>

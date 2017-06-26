@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Navigation Bar" android:key="mesa_navbarena" android:defaultValue="false" android:summaryOn="(Enabled) Enables Navigation Bar" android:summaryOff="(Disabled) Enables Navigation Bar" app:rebootDevice="true" />
+</PreferenceScreen>
