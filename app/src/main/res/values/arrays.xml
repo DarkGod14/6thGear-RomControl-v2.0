@@ -1,59 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-        the Free Software Foundation, either version 3 of the License, or
-        (at your option) any later version.
-
-        This program is distributed in the hope that it will be useful,
-        but WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-        GNU General Public License for more details.
-
-        You should have received a copy of the GNU General Public License
-        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
 <resources>
-
-    <string-array name="test_list_entries">
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-        <item>Let\'s make twenty</item>
+    <array name="about_contact_us_drawables">
+        <item>@drawable/revo_fb</item>
+        <item>@drawable/revo_tg</item>
+        <item>@drawable/revo_xda</item>
+    </array>
+    <string-array name="about_contact_us_links">
+        <item>https://www.facebook.com/groups/1282214698526634/</item>
+        <item>https://t.me/joinchat/AAAAAELWpQ8Vj6y6wHgczA</item>
+        <item>https://forum.xda-developers.com/member.php?u=7620420</item>
     </string-array>
-    <string-array name="test_list_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>20</item>
+    <string-array name="about_contact_us_text">
+        <item>Facebook</item>
+        <item>Telegram</item>
+        <item>XDA</item>
     </string-array>
-    <string-array name="theme_items">
-        <item>Light theme</item>
-        <item>Dark theme</item>
+    <array name="about_credits_drawables">
+        <item>@drawable/revo_anan</item>
+        <item>@drawable/revo_mesa</item>
+        <item>@drawable/revo_lucho</item>
+		<item>@drawable/revo_leo</item>
+    </array>
+    <string-array name="about_credits_links">
+        <item>https://forum.xda-developers.com/member.php?u=4637718</item>
+        <item>https://forum.xda-developers.com/member.php?u=6911575</item>
+        <item>https://www.facebook.com/luisangelalvarez01</item>
+        <item>https://www.facebook.com/leomota1996</item>     
+    </string-array>
+    <string-array name="about_credits_names">
+        <item>ananjaser1211 - for help me with RC</item>
+        <item>BlackMesa123 - for have brilliant ideas on mods and work with me</item>
+        <item>Lucho - my tester and great friend</item>
+		<item>Léo Motta - my friend and for help in mods</item>
+    </string-array>
+    <array name="about_team_drawables">
+        <item>@drawable/zonik_avatar</item>
+    </array>
+    <string-array name="about_team_links">
+        <item>https://forum.xda-developers.com/member.php?u=7620420</item>
+    </string-array>
+    <string-array name="about_team_names">
+        <item>Zonik - ROM Developer and Modder</item>
     </string-array>
     <string-array name="backup_restore_items">
         <item>Backup data</item>
         <item>Restore data</item>
     </string-array>
-
-    <string-array name="thumbnail_items">
-        <item>Icon 1</item>
-        <item>Icon 2</item>
+    <string-array name="changelog_items">
+        <item>Added Blue Ligh Filter N7</item>
+        <item>Added Revolution Rom Control</item>
+        <item>Virtual Mods in RC</item>
+        <item>Network traffic control RC</item>
+        <item>Custom Carrier in RC</item>
+        <item>Aokp Ram Bar in RC</item>
+        <item>Lockscreen rotation in RC</item>
+        <item>Battery Bar in RC</item>
+        <item>Navbar S8 in RC</item>
+        <item>Single Swipe Quickpanel in RC</item>
+        <item>MultiUser control in RC</item>
+        <item>Tinted Lockscreen in RC</item>
+        <item>IncallUI Record Control in RC</item>
+        <item>Fixed fonts emoji</item>
+        <item>Fixed some problems GPU screen blue</item>
+        <item>Added Kernel Kraken R4 (How default kernel)</item>
+        <item>Added Emoji ios</item>
+        <item>Wakelock scritps enable Play services for save battery</item>
+        <item>More Optimization</item>
+		<item>Removed Magisk root</item>
+		<item>Among others that I do not remember</item>
     </string-array>
-    <string-array name="thumbnail_values" translatable="false">
+    <string-array name="crop_entries">
+        <item>Center crop</item>
+        <item>Center inside</item>
+        <item>Fit XY</item>
+    </string-array>
+    <string-array name="crop_values">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    <array name="thumbnail_drawables">
-        <item>@drawable/icon_6</item>
-        <item>@drawable/icon_5</item>
-    </array>
-
     <string-array name="custom_bg_type_entries">
         <item>Image</item>
         <item>Solid color</item>
         <item>Gradient</item>
     </string-array>
-    <string-array name="custom_bg_type_values" translatable="false">
+    <string-array name="custom_bg_type_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -63,24 +94,150 @@
         <item>Bottom to top</item>
         <item>Left to right</item>
         <item>Right to left</item>
-
     </string-array>
-    <string-array name="gradient_values" translatable="false">
+    <string-array name="gradient_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
-
     </string-array>
-
-    <string-array name="crop_entries">
-        <item>Center crop</item>
-        <item>Center inside</item>
-        <item>Fit XY</item>
+    <array name="nav_menu_prefs_drawables">
+        <item>@drawable/icon_virtual</item>
+        <item>@drawable/icon_traffic</item>
+        <item>@drawable/icon_carrier</item>
+        <item>@drawable/icon_ram</item>
+        <item>@drawable/icon_lock</item>
+        <item>@drawable/icon_bar</item>
+        <item>@drawable/icon_navbar</item>
+		<item>@drawable/icon_swipe</item>
+		<item>@drawable/icon_user</item>			
+        <item>@drawable/icon_tinted</item>
+		<item>@drawable/icon_incall</item>
+    </array>
+    <string-array name="nav_menu_prefs_titles">
+        <item>@string/systemui_prefs</item>
+        <item>@string/systemui_prefsv2</item>
+        <item>@string/systemui_prefsv3</item>
+        <item>@string/systemui_prefsv4</item>
+        <item>@string/systemui_prefsv5</item>
+        <item>@string/systemui_prefsv6</item>
+        <item>@string/systemui_prefsv7</item>
+		<item>@string/systemui_prefsv8</item>
+		<item>@string/systemui_prefsv9</item>
+		<item>@string/systemui_prefsv10</item>
+		<item>@string/systemui_prefsv11</item>
     </string-array>
-    <string-array name="crop_values" translatable="false">
+    <string-array name="nav_menu_xml_file_names">
+        <item>zonik_ui</item>
+        <item>zonik_uiv2</item>
+        <item>zonik_uiv3</item>
+        <item>zonik_uiv4</item>
+        <item>zonik_uiv5</item>
+        <item>zonik_uiv6</item>
+        <item>zonik_uiv7</item>
+		<item>zonik_uiv8</item>
+		<item>zonik_uiv9</item>
+		<item>zonik_uiv10</item>
+		<item>zonik_uiv11</item>
+    </string-array>
+    <string-array name="test_list_entries">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>"Let's make twenty"</item>
+    </string-array>
+    <string-array name="test_list_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="theme_items">
+        <item>Light theme</item>
+        <item>Dark theme</item>
+    </string-array>
+    <array name="thumbnail_drawables">
+        <item>@drawable/icon_6</item>
+        <item>@drawable/icon_5</item>
+    </array>
+    <string-array name="thumbnail_items">
+        <item>Icon 1</item>
+        <item>Icon 2</item>
+    </string-array>
+    <string-array name="thumbnail_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="font_style_entry">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="font_style_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="battery_bar_entries">
+        <item>Hide</item>
+        <item>Show</item>
+    </string-array>
+    <string-array name="battery_bar_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_style_entries">
+        <item>Regular</item>
+        <item>Center-mirrored</item>
+    </string-array>
+    <string-array name="battery_bar_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_entries">
+        <item>1 dp</item>
+        <item>2 dp</item>
+        <item>3 dp</item>
+        <item>4 dp</item>
+    </string-array>
+    <string-array name="battery_bar_thickness_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="traffic_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="traffic_state_items">
+        <item>Disable view</item>
+        <item>Upload only</item>
+        <item>Download only</item>
+        <item>Upload and Download</item>
+    </string-array>
+    <string-array name="arrow_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="arrow_position_entries">
+        <item>To end of view</item>
+        <item>To start of view</item>
+    </string-array>
+    <string-array name="traffic_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="traffic_style_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 </resources>
